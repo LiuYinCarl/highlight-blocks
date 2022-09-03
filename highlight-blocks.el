@@ -187,7 +187,7 @@ block."
             (push (cons (pop begins) end) result)
             (setq i (1+ i))))
       (scan-error))
-    result))
+    (last result)))
 
 (defun highlight-blocks--update-selected-window ()
   "Highlight blocks in the selected window."
